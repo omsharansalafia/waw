@@ -5,6 +5,26 @@ from skimage import measure
 
 
 def hpix_contours(m,levels=[0.5,0.9],nest=False):
+	"""
+	Compute iso-lines for a healpix map
+	
+	Parameters:
+	-----------
+	m: 1D numpy array
+	    The input healpix map.
+	levels: list of floats
+	    The values for which to compute the iso-lines. Default: [0.5,0.9]
+	nest: boolean
+	    If True, nested ordering is assumed for the healpix map.
+	
+	Return:
+	-------
+	contours: a list of masked numpy arrays
+	    Each element in the list is a 2D numpy array containing the contour lines corresponding to a given level.
+	    Each contour c in the list has shape (2,N): c[0] represents the RA and c[1] the Dec coordinates of the 
+	    points constituting the contour.
+	"""
+	
 	
 	nside = hp.npix2nside(len(m))
 	
