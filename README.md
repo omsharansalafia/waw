@@ -8,7 +8,6 @@ Om Sharan Salafia - Università degli Studi di Milano-Bicocca, INAF - Osservator
 
 ## License
 
-waw : electromagnetic follow-up optimization for the detection of gravitational wave counterparts
 Copyright (C) 2017 Om Sharan Salafia
 
 This program is free software: you can redistribute it and/or modify
