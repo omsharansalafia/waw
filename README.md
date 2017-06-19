@@ -1,7 +1,8 @@
 # waw
 ## a python implementation of the "where and when" EM follow-up optimization strategy
 
-The waw python module implements the electromagnetic follow-up optimization strategy described in Salafia et al. 2017 (http://adsabs.harvard.edu/abs/2017arXiv170405851S)
+The waw python module implements the electromagnetic follow-up optimization strategy described in Salafia et al. 2017 (http://adsabs.harvard.edu/abs/2017arXiv170405851S). When using this code (including derivative versions) in your own work, please included a proper citation to that article.
+
 
 ## Getting started
 Clone this repository, then clone the "aftab" repository (https://github.com/omsharansalafia/aftab) into the *waw* subdirectory.
