@@ -113,7 +113,7 @@ def construct_followup_strategy(skymap, detmaps, t_detmaps, Afov, T_int, T_avail
     nsides = 2. ** np.arange(2, 10)
     areas = hp.nside2pixarea(nsides, degrees=True)
     ratio = Afov / areas
-    nside = np.min(nsides[ratio > 1.])
+    nside = int(np.min(nsides[ratio > 1.]))
 
     # rescale the integration time to the effective one corresponding to
     # that pixel area
