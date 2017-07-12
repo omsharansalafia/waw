@@ -3,5 +3,5 @@ scipy
 astropy
 healpy
 matplotlib
-skimage
+scikit-image
 
