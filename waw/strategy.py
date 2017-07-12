@@ -124,7 +124,7 @@ def construct_followup_strategy(skymap, detmaps, t_detmaps, Afov, T_int, T_avail
     if limit_to_region is None:
         region = np.ones(hp.nside2npix(nside),dtype=bool)
     else:
-        region = hp.ud_grade(limit_to_region, nside)
+        region = hp.ud_grade(limit_to_region.astype(int), nside).astype(bool)
 
     # limit the detmaps to the region (to save memory and computation time)
     # after degrading/upgrading to the correct resolution
