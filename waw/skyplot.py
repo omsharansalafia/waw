@@ -61,7 +61,7 @@ def plot_healpix_map(m,nest=False, ax=None, projection='rectilinear', rotate=0.,
     lon = phi_rot
     lat = np.pi/2. - theta
     cm = ax.pcolormesh(lon,lat,M,**kwargs)
-    ax.set_axis_bgcolor('gray')
+    ax.set_facecolor('gray')
     cb = plt.colorbar(cm)
     
     return ax,cb
