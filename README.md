@@ -9,7 +9,7 @@ Clone this repository, then clone the "aftab" repository (https://github.com/oms
 You can then launch the example script "28840_opt_followup.py" in the *examples* directory to check that everything works fine (make sure you have the prerequisites - see below).
 
 ## Prerequisites
-The dependencies are listed in the requirements.txt file.
+The scripts have been tested with Python 3 only. The dependencies are listed in the requirements.txt file.
 
 ## Contributors
 
